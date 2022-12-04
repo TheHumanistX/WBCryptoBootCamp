@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "adds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Day5HW.sol": "Day5HW"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Day5HW.sol": {
+			"keccak256": "0xa0e69a2bb22c05b17380f7fa69d1e049880e470448d3a0867b1088bde1f1cbb1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://886a15a8b6d9506e30501f4f0ea08cdacbc1c94eb6b4a355c6a7133d309e014b",
+				"dweb:/ipfs/QmbjXFHFNrBD9oYm49A2BebJ5J3s8KF7wB41RLdtppv94E"
+			]
+		}
+	},
+	"version": 1
+}
