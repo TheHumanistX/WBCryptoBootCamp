@@ -13,13 +13,26 @@ contract Day5HW {
     }
 
     function yum(string memory _input) public view returns (string memory) {
-        if(_input.equals("cookie")) {
+        if(keccak256(abi.encodePacked("cookie")) == keccak256(abi.encodePacked(_input))) {
             return "yum";
         } else {
             return "yuck";
         }
     }
 
+    function addsTwo(uint _numOne, uint _numTwo) public view returns(string memory) {
+        if(_numOne + _numTwo == 10) {
+            return "party";
+        }
+    }
+
+    function doubles(uint _times) public view returns(uint) {
+        uint product = 1;
+        for (uint i = 0; i < _times; i++) {
+            product *= 2;
+        }
+        return(product);
+    }
 
 }
 

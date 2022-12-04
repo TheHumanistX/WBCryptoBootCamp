@@ -19,6 +19,49 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numTwo",
+						"type": "uint256"
+					}
+				],
+				"name": "addsTwo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_times",
+						"type": "uint256"
+					}
+				],
+				"name": "doubles",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -29,6 +72,25 @@
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_input",
+						"type": "string"
+					}
+				],
+				"name": "yum",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -60,11 +122,11 @@
 	},
 	"sources": {
 		"contracts/Day5HW.sol": {
-			"keccak256": "0xa0e69a2bb22c05b17380f7fa69d1e049880e470448d3a0867b1088bde1f1cbb1",
+			"keccak256": "0x0f87417604d65ca7b5f3e36fa31dee09e4f192dfe423912b3680b2213c56dcaf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://886a15a8b6d9506e30501f4f0ea08cdacbc1c94eb6b4a355c6a7133d309e014b",
-				"dweb:/ipfs/QmbjXFHFNrBD9oYm49A2BebJ5J3s8KF7wB41RLdtppv94E"
+				"bzz-raw://41284fb6cb5670eca2098ca868af8e8760f717daf9dd34cb693bc0fd0ac5302b",
+				"dweb:/ipfs/QmdzS8JbkBUT8NRLQH4krrJu3qAHp9jLMEWFTRrKzFTt4Q"
 			]
 		}
 	},
