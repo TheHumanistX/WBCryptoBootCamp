@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractId",
+						"type": "address"
+					}
+				],
+				"name": "callThingy",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Practice/ThreeContracts.sol": "A"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Practice/ThreeContracts.sol": {
+			"keccak256": "0xd8504cdfe6748ee82d2d1b4072223cbf9b6247b6c1c6d4cfeffa6d2c136b96cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83bced77dc8d0f9a0f252442bd4db0eb956bb2480b1447cedc28cec4b1f0840b",
+				"dweb:/ipfs/QmRB1Z1byWNqfDJY3PYqUmgmYCMrxfikowJLkUfhpSgWS4"
+			]
+		}
+	},
+	"version": 1
+}

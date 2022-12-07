@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "change",
+						"type": "string"
+					}
+				],
+				"name": "changeValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/W2Day2.sol": "A"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/W2Day2.sol": {
+			"keccak256": "0x63f8aad1a5e2983f5a4934f6473be8ec154711284ccc62f659271e74d1a78957",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c96781739f847949934d02dd94b7b2dfc4ee23d07f8b029eac68d3b6bb5efc4d",
+				"dweb:/ipfs/QmV2AgvvFTxUGNzsKN8St9EpzvHi3zRetc6Tn5P629PLPB"
+			]
+		}
+	},
+	"version": 1
+}
