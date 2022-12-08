@@ -25,7 +25,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractId",
+						"type": "address"
+					}
+				],
 				"name": "getNumber",
 				"outputs": [
 					{
@@ -35,6 +41,47 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_contractIdC",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_contractIdB",
+						"type": "address"
+					}
+				],
+				"name": "setBNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_contractIdB",
+						"type": "address"
+					}
+				],
+				"name": "setBNumberDirect",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -66,11 +113,11 @@
 	},
 	"sources": {
 		"contracts/Practice/ThreeContracts.sol": {
-			"keccak256": "0xd8504cdfe6748ee82d2d1b4072223cbf9b6247b6c1c6d4cfeffa6d2c136b96cf",
+			"keccak256": "0x0f0254ddff558c3bd3888cc392bf6b4df23cfc23a31e5e095811c241b5dc2835",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://83bced77dc8d0f9a0f252442bd4db0eb956bb2480b1447cedc28cec4b1f0840b",
-				"dweb:/ipfs/QmRB1Z1byWNqfDJY3PYqUmgmYCMrxfikowJLkUfhpSgWS4"
+				"bzz-raw://7ae1f4a90ad8d78e66dfa64086872d3cfc913c7b996b6b927c9d28a422fc7bd3",
+				"dweb:/ipfs/QmaN9ugQcGGrqxDGcPqJ1WqeHj7Cqq84dBfn5nDKwspVUS"
 			]
 		}
 	},

@@ -6,43 +6,34 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "address",
-						"name": "_walletId",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_contractC",
+						"name": "owner",
 						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "onSuccess",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "getNumber",
+				"name": "getOwner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_number",
-						"type": "uint256"
-					}
-				],
-				"name": "setNumber",
+				"inputs": [],
+				"name": "setOwner",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -61,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Practice/ThreeContracts.sol": "B"
+			"contracts/Practice/Playground.sol": "Owner"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -75,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Practice/ThreeContracts.sol": {
-			"keccak256": "0x0f0254ddff558c3bd3888cc392bf6b4df23cfc23a31e5e095811c241b5dc2835",
+		"contracts/Practice/Playground.sol": {
+			"keccak256": "0x5f8fffaf4a58392f84cc5229b80a382db5c2f15405ae615ce9c86c88b3bdc59c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7ae1f4a90ad8d78e66dfa64086872d3cfc913c7b996b6b927c9d28a422fc7bd3",
-				"dweb:/ipfs/QmaN9ugQcGGrqxDGcPqJ1WqeHj7Cqq84dBfn5nDKwspVUS"
+				"bzz-raw://1ba3c49e19317236555db419aecab1dbd8418cc4f9f45824d305ac6174a9fac0",
+				"dweb:/ipfs/QmRLnJs4tQm6ivsQBdSQTWGCqpSkAsgtB9oAszQ9hRNXAi"
 			]
 		}
 	},

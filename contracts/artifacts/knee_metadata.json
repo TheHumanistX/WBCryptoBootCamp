@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getThingy",
+				"name": "age",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bend",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -19,21 +32,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "kick",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "_number",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "_contractId",
-						"type": "address"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
-				"name": "setBNumber",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -50,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Practice/ThreeContracts.sol": "C"
+			"contracts/W2Day3.sol": "knee"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -64,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Practice/ThreeContracts.sol": {
-			"keccak256": "0x0f0254ddff558c3bd3888cc392bf6b4df23cfc23a31e5e095811c241b5dc2835",
+		"contracts/W2Day3.sol": {
+			"keccak256": "0x17c753bf86e5762fcf7f49fc3ff25c0cc49cc3ae0491e1712378976b8e75579e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7ae1f4a90ad8d78e66dfa64086872d3cfc913c7b996b6b927c9d28a422fc7bd3",
-				"dweb:/ipfs/QmaN9ugQcGGrqxDGcPqJ1WqeHj7Cqq84dBfn5nDKwspVUS"
+				"bzz-raw://979974f7563a7ac1c4505838c8f1c96762a6a85ed0bbb7b084736b16cc8fb989",
+				"dweb:/ipfs/QmYZBGkvvvesMv9meaqAFSLsPpTTCbJ9mDoQ4DqUvZEGsA"
 			]
 		}
 	},
