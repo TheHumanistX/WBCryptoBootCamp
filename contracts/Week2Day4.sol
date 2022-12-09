@@ -29,11 +29,10 @@ contract Week2Day4 {
 
     function airdrop() public payable {
         uint arrayLength = addresses.length;
-        for(uint i = 0; i < arrayLength; i++) {
-            if (addresses[i] == msg.sender) {
+        if (isOnList[msg.sender] == true) {
                 arrayLength -= 1;
             }
-        }
+        
         require(msg.value >= arrayLength, "Not enough ETH for the airdrop!");
         uint airdropAmount = msg.value / arrayLength;
         for(uint i = 0; i < arrayLength; i++) {

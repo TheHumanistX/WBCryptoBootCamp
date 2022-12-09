@@ -6,19 +6,45 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "addFive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "addresses",
-				"outputs": [
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "_whichToCheck",
 						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -26,20 +52,33 @@
 			},
 			{
 				"inputs": [],
-				"name": "airdrop",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
-				"name": "balance",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -53,31 +92,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_address",
+						"internalType": "address payable",
+						"name": "_otherWallet",
 						"type": "address"
-					}
-				],
-				"name": "getUserBalance",
-				"outputs": [
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isOnList",
+				"name": "transferToOther",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -85,14 +110,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "joinList",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -109,7 +127,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Week2Day4.sol": "Week2Day4"
+			"contracts/tokenHard.sol": "tokenHard"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -123,12 +141,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Week2Day4.sol": {
-			"keccak256": "0xdf2390ac1875700a8c76d69bccb2c241a9727dda8787eb598e7a51aaa8ecd0aa",
+		"contracts/tokenHard.sol": {
+			"keccak256": "0x2c196f1a7e236195c4481dfee382bd1406c16da9b65e51e78083870bab0e7a28",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://391d57196f0db301829e3329a26f72554209017bbb28a2f5954778b4a76405a6",
-				"dweb:/ipfs/QmcJhMATk2pEShUZkyCjyo8CyoaAuhLiLDe2EwZpuui1xW"
+				"bzz-raw://68f3b63ade2c0be50e23b2f3d27ee1382dc7d6101c366a6847e989083037c6e6",
+				"dweb:/ipfs/QmXKdeewhtKAqXCVJqgdCE7aokAoVpXfDfdF36MwLf1dSv"
 			]
 		}
 	},
