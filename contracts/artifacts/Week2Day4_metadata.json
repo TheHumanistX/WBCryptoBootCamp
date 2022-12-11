@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -32,57 +37,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "creator",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_address",
-						"type": "address"
-					}
-				],
-				"name": "getUserBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isOnList",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -124,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/Week2Day4.sol": {
-			"keccak256": "0xdf2390ac1875700a8c76d69bccb2c241a9727dda8787eb598e7a51aaa8ecd0aa",
+			"keccak256": "0xef196b7b98e508784f6f31f344d56386eb563affd9d438add74961cfa411c7f3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://391d57196f0db301829e3329a26f72554209017bbb28a2f5954778b4a76405a6",
-				"dweb:/ipfs/QmcJhMATk2pEShUZkyCjyo8CyoaAuhLiLDe2EwZpuui1xW"
+				"bzz-raw://b49b43bf361cfe4586d1728649072e296814b380045d47f46cee55b070ec251d",
+				"dweb:/ipfs/QmUyEXh4UVxKadd8qJr9Lwef9wj89ntL5NhUvHPDWnpH54"
 			]
 		}
 	},
