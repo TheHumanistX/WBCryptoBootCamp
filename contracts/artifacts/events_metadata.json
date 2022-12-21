@@ -1,0 +1,142 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "b",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "c",
+						"type": "string"
+					}
+				],
+				"name": "log1",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "b",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "c",
+						"type": "string"
+					}
+				],
+				"name": "log2",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "b",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "c",
+						"type": "string"
+					}
+				],
+				"name": "log3",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "callLog1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "callLog2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "callLog3",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/W3Day5.sol": "events"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/W3Day5.sol": {
+			"keccak256": "0xd88e48a2e28c800af391fe7557dc572ba505086f2d2a58d70e29d6971ccf185c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c5fdb6049d6ef817c6a057c0e80450725057fa8b90b5196821eeb8d907d1651e",
+				"dweb:/ipfs/QmdfyTPHsQ5XDitNjU7FCosxk8MiPcXYEJ8p98RdKri6mx"
+			]
+		}
+	},
+	"version": 1
+}
