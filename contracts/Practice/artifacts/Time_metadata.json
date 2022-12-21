@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timeStamp",
+						"type": "uint256"
+					}
+				],
+				"name": "getTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Practice/Playground.sol": "Time"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Practice/Playground.sol": {
+			"keccak256": "0x609c0a4512879ab34d22f023a39ae7e9d7e1e93fd068673870ae6439a7acfb45",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01be08e2107ae5af48e519f8450b17179f462633abc215cad43dc69a63658a29",
+				"dweb:/ipfs/QmVrXsxFmQ1fMrSKENLFjJdCYbZjryhXEUAri4GL3ZmakT"
+			]
+		}
+	},
+	"version": 1
+}

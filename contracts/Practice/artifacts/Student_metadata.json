@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_enrollNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "studentEnrolled",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rollNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_studentName",
+						"type": "string"
+					}
+				],
+				"name": "enroll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "enrollMapping",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Practice/Playground.sol": "Student"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Practice/Playground.sol": {
+			"keccak256": "0x2e431f5cd4386ff0bcf294b3a68548a882f49191a7f75fd620dd6531224ef0b0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://70ef9e91484c32081cb0a00e3f861c538711339c05a603707471b851499cc02f",
+				"dweb:/ipfs/QmU3Keyk4SDxWfcekGoBDiCbnEKYMoQYgFKxLgarNuJexL"
+			]
+		}
+	},
+	"version": 1
+}

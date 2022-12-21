@@ -18,7 +18,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "add",
+				"name": "addition",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -42,7 +42,44 @@
 						"type": "uint256"
 					}
 				],
-				"name": "div",
+				"name": "division",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "max",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "multiplication",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -66,7 +103,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mult",
+				"name": "subtraction",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -78,19 +115,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "sub",
+				"inputs": [],
+				"name": "zero",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -98,7 +124,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -115,7 +141,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Practice/Playground.sol": "Calculator"
+			"contracts/Practice/Playground.sol": "Calculations"
 		},
 		"evmVersion": "london",
 		"libraries": {},

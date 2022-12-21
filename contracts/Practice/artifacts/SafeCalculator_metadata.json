@@ -18,7 +18,31 @@
 						"type": "uint256"
 					}
 				],
-				"name": "add",
+				"name": "addition",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "division",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -42,7 +66,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "div",
+				"name": "multiplication",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,7 +74,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -66,31 +90,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mult",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "sub",
+				"name": "subtraction",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -115,7 +115,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Practice/Playground.sol": "Calculator"
+			"contracts/Practice/Playground.sol": "SafeCalculator"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -130,11 +130,11 @@
 	},
 	"sources": {
 		"contracts/Practice/Playground.sol": {
-			"keccak256": "0x532f1b83680b390986ec99f5fd7169e97e514fec2dc010338fde305eadfc5d0a",
+			"keccak256": "0x9888d56aa8dce945197773a3e2ce59f184d1f1ff0fbbe53a94c6a1c9bd68975a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ae47e6e82f549c6cf5a78b9c3a2e80795d187fd5a306318f1f87853fe1dcccf8",
-				"dweb:/ipfs/QmZ5JojTTwF1avXrvaLL7hz2REbGNbu5a2cKEg8Wn76Bdv"
+				"bzz-raw://94ce82dbd6ae3bd5eb9b631c19393ca4e7554eff7ac70b9818a8025ff2a0fde3",
+				"dweb:/ipfs/QmWtzF2o7zCBVGKD8TeEk971btWsaLkTrdYQdeom8VXpei"
 			]
 		}
 	},

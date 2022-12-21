@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_num",
+						"type": "int256"
+					}
+				],
+				"name": "check",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Practice/Playground.sol": "ThreeAndSeven"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Practice/Playground.sol": {
+			"keccak256": "0xcd385c2cbc3ecba6098a8c7f056c9fcb6df99bd26f82dd6972cfd6d5b5704ef5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f6d9990e6d6a2027b7c3ebd71ac97f522e430b19280249f12efb9c149a4eb4b",
+				"dweb:/ipfs/QmcXUBkiBfuj5ben5FrsmQisKvMd5EbeV4Q9ZzyyyJG1cK"
+			]
+		}
+	},
+	"version": 1
+}

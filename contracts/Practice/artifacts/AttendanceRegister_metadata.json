@@ -6,99 +6,93 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_num1",
+						"name": "class",
 						"type": "uint256"
 					},
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_num2",
+						"name": "time",
+						"type": "uint256"
+					}
+				],
+				"name": "Added",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "class",
 						"type": "uint256"
 					}
 				],
 				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "div",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "register",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "class",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "joiningDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "mult",
+				"inputs": [],
+				"name": "teacher",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num2",
-						"type": "uint256"
-					}
-				],
-				"name": "sub",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -115,7 +109,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Practice/Playground.sol": "Calculator"
+			"contracts/Practice/Playground.sol": "AttendanceRegister"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -130,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/Practice/Playground.sol": {
-			"keccak256": "0x532f1b83680b390986ec99f5fd7169e97e514fec2dc010338fde305eadfc5d0a",
+			"keccak256": "0x3382363720c3e727ec3fd8ce07055ae4704a6f598de12c3f7602b97b3a9beacf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ae47e6e82f549c6cf5a78b9c3a2e80795d187fd5a306318f1f87853fe1dcccf8",
-				"dweb:/ipfs/QmZ5JojTTwF1avXrvaLL7hz2REbGNbu5a2cKEg8Wn76Bdv"
+				"bzz-raw://776d7f1d1e18cc9ab540bc6268433f0ac9cd0ae42598278a54a03cada6fe504c",
+				"dweb:/ipfs/QmNSa8dneYC8BAUUekhF9o1qZfKBnQNe4r6yCcXozv6bpQ"
 			]
 		}
 	},

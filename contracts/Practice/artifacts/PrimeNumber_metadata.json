@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Practice/Playground.sol": "PrimeNumber"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Practice/Playground.sol": {
+			"keccak256": "0xf244fa2c9ca6a6c5596295955aabe0e5fd0517978e01208827f515f6d5f10f9c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d20840ba9fad9380cc84bab056b720cca4cad9da1c47be51a60278f6b3862d87",
+				"dweb:/ipfs/QmfKLoj3FDztaiGrq8HngnBdh7CCcv5i59kBYd8P4Y1Z8x"
+			]
+		}
+	},
+	"version": 1
+}
