@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
@@ -31,11 +31,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					},
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address payable",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -45,7 +53,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
@@ -69,7 +77,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
@@ -88,7 +96,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
@@ -115,7 +123,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/W2Day4Vault.sol": "vault"
+			"contracts/W3Day4.sol": "vault"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -129,12 +137,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/W2Day4Vault.sol": {
-			"keccak256": "0xa598652a2ce1046a05617f35582c795746d91bed6a85395160fd39df63846c94",
+		"contracts/W3Day4.sol": {
+			"keccak256": "0x234eb17af5a903bbf7f174571fe6c8601f1bf3400c359f3ea4b902f40d51132f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://04ae84ceff92cf98470ec7602a9caa944e7c39fc32b5c2c8249c8c195d0ea3f3",
-				"dweb:/ipfs/QmW7yk1q4WSGhvJN1cP21z1BgFs1o8P3hCVzURLmxj8nAZ"
+				"bzz-raw://ffaa8f7e2c4babdddd5247f1601de72378296cec2b867ddbb5a6df37292ee0d8",
+				"dweb:/ipfs/QmRiFB92LgdtDSpk7BV91mWvuBZ6JhWT9qXHiesUvVaZVS"
 			]
 		}
 	},
