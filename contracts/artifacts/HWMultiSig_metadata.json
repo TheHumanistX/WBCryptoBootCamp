@@ -13,9 +13,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_newSig",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
 					}
 				],
 				"name": "addSignatory",
@@ -34,19 +34,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_newApprovalAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "changeApprovals",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -102,6 +89,30 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasVotedNewSig",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -141,6 +152,19 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_newSignatory",
+						"type": "address"
+					}
+				],
+				"name": "proposeNewSignatory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_sendTo",
 						"type": "address"
 					},
@@ -153,6 +177,30 @@
 				"name": "proposeTX",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposedSignatories",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "newSigAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "approvals",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -210,6 +258,19 @@
 						"type": "uint256"
 					}
 				],
+				"name": "voteNewSignatory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
 				"name": "voteTX",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -248,11 +309,11 @@
 	},
 	"sources": {
 		"contracts/W3HW.sol": {
-			"keccak256": "0x2d0e4e8952717b52b7c3965b3a5594aa6f2abaf4b0073459131e26387dc742b2",
+			"keccak256": "0xc594acaae9c35cc26bbf8a99eba562d2b689b11a5e2eb230749e3ba101c1f7db",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5e28c43c09d7cae72a390a8f8e22957844f24a7a118d90e2e7a35d1279bddebe",
-				"dweb:/ipfs/QmbCFq2AW9bAcQi63CuYvrAHjaxxiUQDz5p6a5QyrXNpQB"
+				"bzz-raw://3efd5e295c49842a6e2788dca2efb8a36d608e2381b6bf85c0cc5fed30d178ee",
+				"dweb:/ipfs/QmdHW9u2iZAnNmruV9axhhYneHoz7gSj6ZQeVsM7u6kx6G"
 			]
 		}
 	},

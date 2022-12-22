@@ -6,10 +6,12 @@ contract HWMultiSig {
 
     address public creator;
     address[] public owners;
-    uint public approvalsRequired = 3;
+    uint public approvalsRequired = 1;
 
+    NewSignatory[] public proposedSignatories;
     Transaction[] public proposedTransactions;
     mapping(uint => mapping(address => bool)) public hasVoted;
+    mapping(uint => mapping(address => bool)) public hasVotedNewSig;
     mapping(address => bool) public ownerList;
 
     constructor() {
@@ -23,9 +25,9 @@ contract HWMultiSig {
         _;
     }
 
-    modifier onlyCreator() {
-        require(msg.sender == creator, "Ah ah ah! You didn't say the magic word!");
-        _;
+    struct NewSignatory {
+        address newSigAddress;
+        uint approvals;
     }
 
     struct Transaction {
@@ -66,15 +68,39 @@ contract HWMultiSig {
         
     }
 
-    function addSignatory(address _newSig) public onlyCreator {
-        require(ownerList[_newSig] == false, "This address has already been added as a signatory.");
-        owners.push(_newSig);
-        ownerList[_newSig] = true;
+    function proposeNewSignatory(address _newSignatory) public onlySigs {
+        require(ownerList[_newSignatory] == false, "Already a signatory!");
+        proposedSignatories.push(NewSignatory({
+            newSigAddress: _newSignatory,
+            approvals: 0
+        }));
+    }
+
+    function voteNewSignatory(uint _index) public onlySigs {
+        require(hasVotedNewSig[_index][msg.sender] == false, "Already voted!");
+        proposedSignatories[_index].approvals += 1;
+        hasVotedNewSig[_index][msg.sender] = true;
+    }
+
+    function addSignatory(uint _index) public onlySigs {
+        require(ownerList[proposedSignatories[_index].newSigAddress] == false, "This address has already been added as a signatory.");
+        require(proposedSignatories[_index].approvals >= approvalsRequired, "Not enough approvals!");
+        owners.push(proposedSignatories[_index].newSigAddress);
+        ownerList[proposedSignatories[_index].newSigAddress] = true;
+        approvalsRequired = (approvalsRequired / 2) + 1;
 
     }
 
-    function changeApprovals(uint _newApprovalAmount) public onlyCreator {
-        approvalsRequired = _newApprovalAmount;
+    function checkApprovals() private view onlySigs returns(bool) {
+        
+        if (owners.length - approvalsRequired >= owners.length - (owners.length - approvalsRequired) ) {
+            return true;
+        }
+        return false;
+    }
+
+    function changeApprovalsByOne() private onlySigs {
+        approvalsRequired += 1;
     }
 
     function retractVote(uint _index) public onlySigs {
@@ -82,6 +108,8 @@ contract HWMultiSig {
         proposedTransactions[_index].approvals -= 1;
         hasVoted[_index][msg.sender] = false;
     }
+
+    
 
     // list of owners *
     // number of approvals required *
